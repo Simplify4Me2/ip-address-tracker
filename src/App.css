@@ -89,3 +89,9 @@ button {
 img {
   margin-top: -0.5rem;
 }
+
+@media (min-width: 1024px) {
+  .app-title {
+    font-size: 32px;
+  }
+}

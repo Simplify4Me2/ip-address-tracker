@@ -11,15 +11,23 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 //     shadowSize: [41, 41]
 //   });
   
+const mapContainerProps = {
+    center: [34.08057, -118.07285],
+    zoom: 13,
+    scrollWheelZoom: false,
+    zoomControl: false
+}
+
+const titleLayerProps = {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+    url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+}
 
 export function LeafletMap() {
-    const position = [34.08057, -118.07285];
+    // const position = [34.08057, -118.07285];
 
-    return <MapContainer center={position} className='map' zoom={13} scrollWheelZoom={false} zoomControl={false} >
-    <TileLayer
-      attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-    />
+    return <MapContainer {...mapContainerProps} className='map' >
+    <TileLayer {...titleLayerProps} />
     {/* <Marker position={[34.07057, -118.07285]}> icon={customIcon} */}
     <Marker position={[34.07057, -118.07285]}>
       <Popup>
