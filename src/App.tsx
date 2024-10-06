@@ -1,19 +1,18 @@
 import "./App.css";
 import arrowIcon from "./assets/icon-arrow.svg";
-import { InfoSection, LeafletMap } from "./components";
+import { InfoSection, Header, LeafletMap } from "./components";
 
 function App() {
   return (
     <>
-      <header>
-        <h1 className="app-title">IP Address Tracker</h1>
+      <Header>
         <form>
           <input type="text" placeholder="192.212.174.101" name="IP input" />
           <button type="submit">
             <img src={arrowIcon} />
           </button>
         </form>
-      </header>
+      </Header>
       <main>
         <InfoSection label="IP ADDRESS" value="192.212.174.101" />
         <InfoSection label="LOCATION" value="Brooklyn, NY 10001" />

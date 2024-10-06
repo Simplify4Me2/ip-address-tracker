@@ -14,7 +14,7 @@ import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
 const mapContainerProps = {
     center: [34.08057, -118.07285],
     zoom: 13,
-    scrollWheelZoom: false,
+    scrollWheelZoom: true,
     zoomControl: false
 }
 
