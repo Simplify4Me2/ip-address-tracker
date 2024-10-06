@@ -1,3 +1,5 @@
+import './InfoSection.css';
+
 type InfoSectionProps = {
     label: string;
     value: string;

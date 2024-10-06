@@ -1,0 +1,23 @@
+section {
+  margin: 0rem 1rem 0.3rem 1rem;
+}
+
+.section-title {
+  color: hsl(0, 0%, 59%);
+  font-size: 11px;
+  letter-spacing: 1px;
+  line-height: 11px;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+  line-height: 6px;
+}
+
+@media (min-width: 1024px) {
+  .section-title {
+    text-align: left;
+  }
+}
