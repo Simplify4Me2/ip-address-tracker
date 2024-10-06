@@ -1,3 +1,4 @@
 export { InfoSection } from "./InfoSection";
-export { LeafletMap } from "./LeafletMap";
+export { IPAddressInput } from "./IPAddressInput";
 export { Header } from "./Header";
+export { LeafletMap } from "./LeafletMap";
