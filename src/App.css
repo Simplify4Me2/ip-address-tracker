@@ -21,6 +21,13 @@ main {
   padding: 1rem 0rem 1rem 0rem;
   z-index: 500;
 }
+/* 
+br {
+  border-left: 6px solid green;
+  height: 500px;
+  width: 1rem;
+
+} */
 
 @media (min-width: 1024px) {
   main {
@@ -30,5 +37,11 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+  }
+}
+
+@media (max-width: 768px) {
+  br {
+    display: none;
   }
 }
