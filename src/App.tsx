@@ -9,11 +9,11 @@ function App() {
       </Header>
       <main>
         <InfoSection label="IP ADDRESS" value="192.212.174.101" />
-        <br />
+        <div className="break-line"></div>
         <InfoSection label="LOCATION" value="Brooklyn, NY 10001" />
-        <br />
+        <div className="break-line"></div>
         <InfoSection label="TIMEZONE" value="UTC-05:00" />
-        <br />
+        <div className="break-line"></div>
         <InfoSection label="ISP" value="SpaceX Starlink" />
       </main>
       <LeafletMap />
