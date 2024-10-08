@@ -3,11 +3,13 @@ import './InfoSection.css';
 type InfoSectionProps = {
     label: string;
     value: string;
+    showBreakline: boolean;
   };
   
-  export function InfoSection({ label, value }: InfoSectionProps) {
+  export function InfoSection({ label, value, showBreakline }: InfoSectionProps) {
     return (
       <section>
+        <div className={`line-break ${showBreakline ? "" : "hide"}`}></div>
         <h1 className="section-title">{label}</h1>
         <p>{value}</p>
       </section>

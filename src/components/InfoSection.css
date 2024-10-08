@@ -16,6 +16,10 @@ p {
   line-height: 6px;
 }
 
+.line-break {
+  display: none;
+}
+
 @media (min-width: 1024px) {
   section {
     margin-left: 0rem;
@@ -31,9 +35,24 @@ p {
     font-size: 24px;
     text-align: left;
     margin-top: 1rem;
+    /* letter-spacing: 0.5px; */
     letter-spacing: normal;
-    line-height: normal;
-    width: 12rem;
+    line-height: 1.9rem;
+    width: 11rem;
     text-wrap: wrap;
+  }
+
+  .line-break {
+    display: inline;
+    position: absolute;
+    margin-left: 7.1rem;
+    margin-top: 1.75rem;
+    border-left: 1px solid hsl(0, 0%, 59%);
+    opacity: 35%;
+    height: 4.5rem;
+  }
+
+  .hide {
+    display: none;
   }
 }

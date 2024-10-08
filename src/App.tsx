@@ -8,13 +8,13 @@ function App() {
         <IPAddressInput />
       </Header>
       <main>
-        <InfoSection label="IP ADDRESS" value="192.212.174.101" />
-        <div className="break-line"></div>
-        <InfoSection label="LOCATION" value="Brooklyn, NY 10001" />
-        <div className="break-line"></div>
-        <InfoSection label="TIMEZONE" value="UTC-05:00" />
-        <div className="break-line"></div>
-        <InfoSection label="ISP" value="SpaceX Starlink" />
+        <InfoSection label="IP ADDRESS" value="192.212.174.101" showBreakline />
+        {/* <div className="break-line"></div> */}
+        <InfoSection label="LOCATION" value="Brooklyn, NY 10001" showBreakline />
+        {/* <div className="break-line"></div> */}
+        <InfoSection label="TIMEZONE" value="UTC-05:00" showBreakline />
+        {/* <div className="break-line"></div> */}
+        <InfoSection label="ISP" value="SpaceX Starlink" showBreakline={false} />
       </main>
       <LeafletMap />
     </>
