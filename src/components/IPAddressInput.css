@@ -22,6 +22,10 @@ input {
       opacity: 75%;
       font-size: 12px;
     }
+
+    &:hover {
+      cursor: pointer;
+    }
   }
   
   button {
@@ -32,6 +36,11 @@ input {
     padding: 1.5rem;
     outline-style: none;
     border-style: none;
+
+    &:hover {
+      cursor: pointer;
+      color: hsl(0, 0%, 59%);
+    }
   }
   
 img {
