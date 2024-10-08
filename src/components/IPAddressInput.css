@@ -15,9 +15,12 @@ input {
     width: 15rem;
     letter-spacing: 0.25px;
     color: hsl(0, 0%, 59%);
+    outline: none;
     
     &::placeholder {
       padding-left: 0.5rem;
+      opacity: 75%;
+      font-size: 12px;
     }
   }
   
@@ -43,18 +46,10 @@ img {
   
     input {
       width: 29rem;
-      /* font-family: Rubik;
-      font-size: 18px;
-      border-radius: 15px 0px 0px 15px;
-      border-style: none;
-      padding: 0rem 1rem;
-      width: 15rem;
-      letter-spacing: 0.25px;
-      color: hsl(0, 0%, 59%);
-      
+
       &::placeholder {
-        padding-left: 0.5rem;
-      } */
+        font-size: 18px;
+      }
     }
   }
   
