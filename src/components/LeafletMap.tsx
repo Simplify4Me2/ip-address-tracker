@@ -1,18 +1,17 @@
 import './LeafletMap.css';
 import 'leaflet/dist/leaflet.css';
 import { MapContainer, Marker, Popup, TileLayer } from 'react-leaflet';
+import { Icon } from "leaflet";
+import locationIcon from "../assets/icon-location.svg";
 
-// const customIcon = new L.Icon({
-//     iconUrl: 'https://example.com/path-to-your-custom-marker.png', // Replace with your custom marker image URL
-//     iconSize: [25, 41], // Size of the icon
-//     iconAnchor: [12, 41], // Point of the icon which will correspond to marker's location
-//     popupAnchor: [1, -34], // Point from which the popup should open relative to the iconAnchor
-//     shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-//     shadowSize: [41, 41]
-//   });
+const customIcon = new Icon({
+  iconUrl: locationIcon,
+  iconSize: [50, 60],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+});
   
 const mapContainerProps = {
-    center: [34.08057, -118.07285],
     zoom: 13,
     scrollWheelZoom: true,
     zoomControl: false
@@ -24,12 +23,9 @@ const titleLayerProps = {
 }
 
 export function LeafletMap() {
-    // const position = [34.08057, -118.07285];
-
-    return <MapContainer {...mapContainerProps} className='map' >
+    return <MapContainer {...mapContainerProps} center={[34.08057, -118.07285]} className='map' >
     <TileLayer {...titleLayerProps} />
-    {/* <Marker position={[34.07057, -118.07285]}> icon={customIcon} */}
-    <Marker position={[34.07057, -118.07285]}>
+    <Marker position={[34.07057, -118.07285]} icon={customIcon}>
       <Popup>
         A pretty CSS3 popup. <br /> Easily customizable.
       </Popup>
