@@ -2,7 +2,7 @@ import './InfoSection.css';
 
 type InfoSectionProps = {
     label: string;
-    value: string;
+    value: string | undefined;
     showBreakline: boolean;
   };
   
@@ -11,7 +11,7 @@ type InfoSectionProps = {
       <section>
         <div className={`line-break ${showBreakline ? "" : "hide"}`}></div>
         <h1 className="section-title">{label}</h1>
-        <p>{value}</p>
+        <p>{value || ""}</p>
       </section>
     );
   }
