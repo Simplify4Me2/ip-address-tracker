@@ -14,6 +14,8 @@ interface Location {
   country: string;
   region: string;
   timezone: string;
+  lat: number;
+  lng: number;
 }
 
 function App() {
@@ -42,7 +44,7 @@ function App() {
           showBreakline={false}
         />
       </main>
-      <LeafletMap />
+      <LeafletMap latitude={data?.location.lat} longitude={data?.location.lng} />
     </>
   );
 }
@@ -51,7 +53,7 @@ export default App;
 
 async function fetchData(): Promise<IPData | void> {
   const response = await fetch(
-    `https://geo.ipify.org/api/v2/country?apiKey=${KEY}`
+    `https://geo.ipify.org/api/v2/country,city?apiKey=${KEY}`
   );
 
   if (!response.ok) console.log("Error fetching data: ", response);
