@@ -14,10 +14,10 @@ input {
     padding: 0rem 1rem;
     width: 15rem;
     letter-spacing: 0.25px;
-    color: hsl(0, 0%, 59%);
     outline: none;
     
     &::placeholder {
+      color: hsl(0, 0%, 59%);
       padding-left: 0.5rem;
       opacity: 75%;
       font-size: 12px;
@@ -47,6 +47,10 @@ img {
     margin-top: -0.5rem;
   }
 
+.invalid {
+  border-color: red;
+  border-style: solid;
+}
   
 @media (min-width: 1024px) {
     form {
