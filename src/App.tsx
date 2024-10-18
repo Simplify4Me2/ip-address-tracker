@@ -5,10 +5,8 @@ import loadingIcon from "./assets/loading.svg";
 import { IPData } from "./models";
 import { useState } from "react";
 
-const KEY = "at_4pySMrTTHtnpNknY1AOjQNkzAcW1j";
-
 async function fetchData(ip: string): Promise<IPData | void> {
-  let uri = `https://geo.ipify.org/api/v2/country,city?apiKey=${KEY}`;
+  let uri = `https://geo.ipify.org/api/v2/country,city?apiKey=${import.meta.env.VITE_API_KEY}`;
 
   if (ip) uri += `&ipAddress=${ip}`;
 
