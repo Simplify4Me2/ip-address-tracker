@@ -42,7 +42,7 @@ jobs:
         run: yarn
         
       - name: Build
-        run: yarn build
+        run: VITE_API_KEY=${{secrets.VITE_API_KEY}} yarn build
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
