@@ -2,9 +2,6 @@ import { useState } from "react";
 import arrowIcon from "../assets/icon-arrow.svg";
 import "./IPAddressInput.css";
 
-// const IP_ADDRESS_REGEX =
-//   "/(?:(?:25[0-5]|2[0-4]d|[01]?d?d{1}).){3}(?:25[0-5]|2[0-4]d|[01]?d?d{1})/g";
-
 const IP_ADDRESS_REGEX = new RegExp(
   /^(?:(?:25[0-5]|2[0-4]\d|[01]?\d{1,2})\.){3}(?:25[0-5]|2[0-4]\d|[01]?\d{1,2})$/
 );
